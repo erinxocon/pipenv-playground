@@ -7,6 +7,8 @@ from typing import Any, MutableMapping
 import toml
 import delegator
 
+from delegator import Command
+
 JSONTYPE = MutableMapping[str, Any]
 
 
@@ -19,10 +21,10 @@ class PipenvInstance:
         self.pipfile_path = self.path / "Pipfile"
         self.lockfile_path = self.path / "Pipfile.lock"
 
-    def __enter__(self):
+    def __enter__(self) -> "PipenvInstance":
         return self
 
-    def __exit__(self, *args):
+    def __exit__(self, *args) -> None:
         self._path.cleanup()
 
     @property
@@ -35,7 +37,7 @@ class PipenvInstance:
         with open(str(self.lockfile_path.absolute()), "r") as f:
             return json.loads(f.read())
 
-    def pipenv(self, cmd, block=True):
+    def pipenv(self, cmd, block=True) -> Command:
         if self.pipfile_path:
             os.environ["PIPENV_PIPFILE"] = str(self.pipfile_path)
         # a bit of a hack to make sure the virtualenv is created
