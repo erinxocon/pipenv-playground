@@ -5,8 +5,8 @@ name = "pypi"
 
 [packages]
 responder = "*"
-pipenv = "*"
 delegator-py = "*"
+toml = "*"
 
 [dev-packages]
 mypy = "*"
