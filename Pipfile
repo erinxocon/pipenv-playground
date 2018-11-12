@@ -7,13 +7,15 @@ name = "pypi"
 responder = "*"
 delegator-py = "*"
 toml = "*"
+pipenv = {editable = true, git = "https://github.com/pypa/pipenv.git"}
+starlette = {editable = true, git = "https://github.com/encode/starlette"}
 
 [dev-packages]
 mypy = "*"
 black = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
 
 [pipenv]
 allow_prereleases = true

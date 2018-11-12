@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f67217c73e1c90c476348d211449ef5558437ee775cc3be32af3280fba4b4682"
+            "sha256": "9b3f7ea02b479ee562730a80e1945ea523520d4b01eda003d979630354109301"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.6"
+            "python_version": "3.7"
         },
         "sources": [
             {
@@ -198,6 +198,11 @@
             ],
             "version": "==4.6.0"
         },
+        "pipenv": {
+            "editable": true,
+            "git": "https://github.com/pypa/pipenv.git",
+            "ref": "d03cfff92cc07df8dd34df4bb9e222542787b5c0"
+        },
         "promise": {
             "hashes": [
                 "sha256:2ebbfc10b7abf6354403ed785fe4f04b9dfd421eb1a474ac8d187022228332af",
@@ -244,11 +249,11 @@
         },
         "responder": {
             "hashes": [
-                "sha256:a826706df0bc4e23007345fe3e1ddc443d25dbcef1f435457ce12a2453b33ee7",
-                "sha256:c2232012ce346104a4f0e225731cab24bf80ba460b8636d1a6c05343d1c95b52"
+                "sha256:1a16be3bd2f457ba09f8e17c7cca098f18e13963a160489f5cce5459eaef5b94",
+                "sha256:a02d4329d691e0d8d4ec1a9a7d7857b93ae9c835fd56faf550ec0ee5df72d950"
             ],
             "index": "pypi",
-            "version": "==1.1.1"
+            "version": "==1.1.2"
         },
         "rfc3986": {
             "hashes": [
@@ -272,10 +277,9 @@
             "version": "==1.11.0"
         },
         "starlette": {
-            "hashes": [
-                "sha256:46bb46447870b4ca3fe8bb09b4f0f4c6fa7beb45d7d1ef2a9119552a546157b2"
-            ],
-            "version": "==0.8.4"
+            "editable": true,
+            "git": "https://github.com/encode/starlette",
+            "ref": "5fc8b394e28a652d0450ae1fcca000af90ef8e7d"
         },
         "toml": {
             "hashes": [
@@ -297,6 +301,19 @@
                 "sha256:38ae2c2d6438438aed08999bb9f7fb0bb12ac99aa9831b30a6045aab88f2cec1"
             ],
             "version": "==0.3.20"
+        },
+        "virtualenv": {
+            "hashes": [
+                "sha256:686176c23a538ecc56d27ed9d5217abd34644823d6391cbeb232f42bf722baad",
+                "sha256:f899fafcd92e1150f40c8215328be38ff24b519cd95357fa6e78e006c7638208"
+            ],
+            "version": "==16.1.0"
+        },
+        "virtualenv-clone": {
+            "hashes": [
+                "sha256:afce268508aa5596c90dda234abe345deebc401a57d287bcbd76baa140a1aa58"
+            ],
+            "version": "==0.4.0"
         },
         "websockets": {
             "hashes": [
